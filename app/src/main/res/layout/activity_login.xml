@@ -45,6 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:onClick="onClickPassWord"
                     android:text="@string/password_login"
                     android:textColor="@color/passWotd"
                     android:textSize="18sp" />
@@ -238,6 +239,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="25dp"
             android:background="#00ff00ff"
+            android:onClick="onClickWechat"
             android:text="@string/weChat"
             android:textColor="#ffffff"
             android:textSize="15sp" />
