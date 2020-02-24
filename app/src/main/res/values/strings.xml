@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">AppTest</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">即投商会</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -18,11 +18,19 @@
     <string name="code">验证码登录</string>
     <string name="phone">请输入手机号码</string>
     <string name="password">请输入密码</string>
+    <string name="register_password" tools:ignore="TypographyDashes">请设置6-18位的字母与数字作为登录密码</string>
+    <string name="register_password_chech">再次输入登录密码</string>
     <string name="imageCode">请输入图形验证码</string>
     <string name="verificationCode">请输入验证码</string>
     <string name="sendVerificationCode">发送验证码</string>
+    <string name="textProtocol">注册即表示您已阅读，并同意《用户注册协议》</string>
     <string name="newUser">新用户注册</string>
     <string name="login">登录</string>
     <string name="or">or</string>
     <string name="weChat">微信登录</string>
+    <string name="address">选择地址</string>
+    <string name="xxx">xxx</string>
+    <string name="address2">地址</string>
+    <string name="sendCode">发送验证码</string>
+    <string name="register">注册</string>
 </resources>

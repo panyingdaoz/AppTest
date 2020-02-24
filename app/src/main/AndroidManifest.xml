@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.kingbird.apptest">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/actions" />
@@ -29,8 +34,12 @@
         </activity>
 
         <activity
-            android:exported="true"
-            android:name=".wecaht.WxEntryActivity"/>
+            android:name=".wecaht.WxEntryActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".wecaht.WxEntryActivity2"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -8,7 +8,7 @@ package com.kingbird.apptest.wecaht;
  */
 public class WeiXin {
 
-    //1:登录 2.分享 3:微信支付
+    //1:登录 2.分享 3:微信支付  MACOSX
     private int type;
     //微信返回的错误码
     private int errCode;

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="172dp"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textColor="#838583"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/login_shape"
+        android:ems="11"
+        android:hint="@string/phone"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegister"
+        tools:ignore="Autofill,RtlSymmetry,TextFields" />
+
+    <LinearLayout
+        android:id="@+id/CodeRegisterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/login_shape"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        tools:layout_editor_absoluteX="1dp">
+
+        <EditText
+            android:id="@+id/ImageViewCode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:hint="@string/imageCode"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            tools:ignore="Autofill,TextFields" />
+
+        <ImageView
+            android:id="@+id/imageViewCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CheckCodeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/login_shape"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/CodeRegisterLayout"
+        tools:layout_editor_absoluteX="1dp">
+
+        <EditText
+            android:id="@+id/CheckCode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:hint="@string/imageCode"
+            android:inputType="textPassword"
+            android:background="#ffffffff"
+            android:textSize="16sp"
+            tools:ignore="Autofill,TextFields" />
+
+        <Button
+            android:id="@+id/SendCode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/sendCode"
+            android:background="#ffffffff"
+            android:textSize="15sp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/login_shape"
+        android:hint="@string/register_password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckCodeLayout"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/loginPasswordCheck"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/login_shape"
+        android:hint="@string/register_password_chech"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+        tools:ignore="Autofill,RtlSymmetry" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/login_shape_button"
+        android:text="@string/register"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/loginPasswordCheck" />
+
+    <TextView
+        android:id="@+id/textProtocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="onProtocol"
+        android:text="@string/textProtocol"
+        android:textColor="#838583"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
